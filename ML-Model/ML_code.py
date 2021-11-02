@@ -9,8 +9,7 @@ from operator import itemgetter
 import matplotlib.pyplot as plt
 
 print("Connecting to database...")
-myclient = pymongo.MongoClient(
-    "mongodb+srv://CairoPulse:CairoPulse@cluster0.538hc.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-qc2g1n-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true")
+myclient = pymongo.MongoClient("")
 mydb = myclient["cairo_pulse"]
 mycol = mydb["neighborhoods"]
 
